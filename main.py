@@ -5,11 +5,11 @@ import time
 
 os.system('cls||clear')
 
-print('VITAL MESSAGE'
+print('ESCOLHA'
      '\n')
 
 while True:
-  D = int(input('HOW DIFFICULT? (4-10) '))
+  D = int(input('QUAL A DIFICULDADE? (4-10) '))
   if D>= 4 and D<= 10:
     break
 
@@ -20,7 +20,7 @@ for i in range(D):
 
 os.system('cls||clear')
 
-print('SEND THIS MESSAGE:'
+print('DIGITE ESSA MENSAGEM:'
       '\n'
       '\n', M)
 
@@ -31,11 +31,10 @@ os.system('cls||clear')
 N = input('').upper()
 
 if N == M:
-  print('MESSAGE CORRECT'
-       '\n''YOU SHOULD HAVE SENT:'
+  print('MENSAGEM CORRETA'
+       '\n''VOCÊ GANHOU!'
        '\n')
 
 else:
-  print('YOU GOT IT WRONG'
-       '\n''YOU SHOULD HAVE SENT:'
-       '\n', M)
+  print('VOCÊ ENTENDEU ERRADO'
+       '\n''VOCÊ DEVERIA TER ENVIADO: ', M)
